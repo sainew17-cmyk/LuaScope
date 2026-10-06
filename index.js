@@ -1,4 +1,6 @@
-
+// =============================================================
+//   LuaScope Bot - Node.js (Render-ready)
+// =============================================================
 const { Client, GatewayIntentBits, EmbedBuilder, AttachmentBuilder, REST, Routes, SlashCommandBuilder } = require('discord.js');
 const fs = require('fs');
 const path = require('path');
