@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: luascope-bot
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: CLIENT_ID
+        sync: false
+      - key: SCAN_DIR
+        value: /tmp/luascope_scans
+    autoDeploy: true
